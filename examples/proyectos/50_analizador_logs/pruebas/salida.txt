@@ -1,0 +1,2 @@
+Errores: 2
+Avisos: 1

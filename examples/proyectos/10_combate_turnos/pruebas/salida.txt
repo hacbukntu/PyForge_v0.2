@@ -1,0 +1,4 @@
+Acciones: atacar o curar.
+Salud: 16, rival: 12
+Salud: 12, rival: 6
+Victoria

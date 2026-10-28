@@ -1,0 +1,202 @@
+/* Tema de terminal: cambia estas variables para personalizar toda la interfaz. */
+:root {
+  color-scheme: dark;
+  --bg: #111214;
+  --panel: #181a1d;
+  --border: #2b2e33;
+  --text: #e1e1dc;
+  --muted: #979b9f;
+  --green: #e6c566;
+  --font: ui-monospace, "Cascadia Code", "Liberation Mono", monospace;
+}
+
+/* Base compartida: tipografía monoespaciada, bordes rectos y foco visible. */
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 13px var(--font); }
+button { font: inherit; color: inherit; background: transparent; border: 1px solid transparent; border-radius: 0; padding: 4px 8px; cursor: pointer; }
+button:hover { background: var(--border); }
+button:disabled { opacity: .4; cursor: default; }
+button.primary { color: var(--green); border-color: #54492e; background: #242117; }
+button:focus-visible, summary:focus-visible { outline: 1px solid var(--green); outline-offset: -1px; }
+kbd { font: inherit; color: var(--muted); margin-left: 6px; }
+[hidden] { display: none !important; }
+
+/* Cabecera compacta: las acciones siguen conectadas a sus identificadores HTML. */
+header { height: 48px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; border-bottom: 1px solid var(--border); }
+.brand { display: flex; align-items: center; gap: 8px; white-space: nowrap; color: var(--green); }
+.brand img { width: 18px; height: 18px; }
+.brand strong { font-weight: normal; color: var(--muted); }
+.actions { display: flex; gap: 6px; align-items: center; overflow-x: auto; }
+.tool-link { color: var(--green); border: 1px solid var(--border); padding: 5px 8px; text-decoration: none; white-space: nowrap; }
+main { display: flex; height: calc(100vh - 48px); height: calc(100dvh - 48px); }
+
+/* Explorador: filas densas, carpetas desplegables e icono propio de los .st. */
+aside { width: 220px; min-width: 150px; display: flex; flex-direction: column; border-right: 1px solid var(--border); }
+.section { min-height: 32px; display: flex; align-items: center; gap: 8px; padding: 0 12px; color: var(--muted); border-bottom: 1px solid var(--border); font-size: 11px; }
+.section button { padding: 2px 5px; }
+.section button:first-of-type { margin-left: auto; }
+#project { padding: 12px; font-size: 12px; overflow-wrap: anywhere; }
+#tree { overflow: auto; flex: 1; padding-bottom: 12px; }
+#tree button { display: flex; align-items: center; gap: 7px; text-align: left; border: 0; border-left: 2px solid transparent; width: 100%; padding: 4px 12px; white-space: nowrap; }
+#tree button:hover, #tree button.active { background: #222428; }
+#tree button.active { color: var(--green); border-left-color: var(--green); }
+#tree img { width: 14px; height: 14px; }
+details > summary { padding: 5px 10px; cursor: pointer; color: var(--muted); }
+.aside-foot { padding: 8px 12px; font-size: 11px; color: var(--muted); border-top: 1px solid var(--border); }
+
+/* Área central: flex permite que el código ocupe el espacio sobrante. */
+.workspace { flex: 1; min-width: 0; min-height: 0; display: flex; flex-direction: column; }
+#tabs { min-height: 32px; display: flex; align-items: center; gap: 8px; padding: 0 12px; background: var(--panel); border-bottom: 1px solid var(--border); }
+#filename { color: var(--green); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#dirty { color: #e0bd83; }
+.hint { margin-left: auto; color: var(--muted); font-size: 11px; white-space: nowrap; }
+#breadcrumb { min-height: 26px; padding: 5px 12px; font-size: 11px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.search-panel { min-height: 40px; display: flex; align-items: center; gap: 6px; padding: 5px 10px; border-bottom: 1px solid var(--border); background: var(--panel); }
+.search-panel input[type="search"], .search-panel input[type="text"] { min-width: 110px; max-width: 240px; flex: 1; padding: 5px 7px; color: var(--text); background: var(--bg); border: 1px solid var(--border); font: inherit; }
+.search-panel label { display: flex; align-items: center; gap: 4px; color: var(--muted); white-space: nowrap; }
+.search-panel label input { width: auto; }
+#search-status { min-width: 70px; color: var(--muted); font-size: 11px; }
+#editor-wrap { position: relative; flex: 1; min-height: 100px; display: flex; overflow: hidden; }
+#lines { width: 48px; flex-shrink: 0; text-align: right; padding: 8px 12px 64px 0; color: var(--muted); overflow: hidden; user-select: none; font: 14px/24px var(--font); white-space: pre; }
+#surface { position: relative; flex: 1; overflow: hidden; }
+
+/* Estas capas deben tener idéntica geometría: el textarea recibe la edición
+   y el pre muestra el texto coloreado. app.js sincroniza su desplazamiento. */
+#editor, #highlight { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 8px 16px 40px 0; border: 0; font: 14px/24px var(--font); letter-spacing: 0; tab-size: 4; white-space: pre; overflow: auto; border-radius: 0; }
+#highlight { pointer-events: none; color: var(--text); }
+#editor { resize: none; background: transparent; color: transparent; caret-color: var(--green); -webkit-text-fill-color: transparent; outline: none; }
+#editor::selection { background: #e6c56635; }
+#surface:focus-within { box-shadow: inset -1px 0 var(--border); }
+
+/* Categorías semánticas proporcionadas por KEYWORDS a través de language.py. */
+#highlight .keyword { color: #c5a5cd; }
+#highlight .type { color: #8ec5c1; }
+#highlight .function { color: #e0bd83; }
+#highlight .string { color: var(--green); }
+#highlight .comment { color: #969e99; font-style: italic; }
+#highlight .number, #highlight .boolean { color: #d7a487; }
+
+/* Salida redimensionable y barra inferior, inspiradas en divisiones de terminal. */
+.terminal { height: 180px; min-height: 90px; max-height: 50vh; flex-shrink: 0; resize: vertical; overflow: auto; border-top: 1px solid var(--border); }
+#execution { font-size: 11px; color: var(--green); margin-left: 8px; }
+.terminal pre { padding: 10px 12px; margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/20px var(--font); max-height: calc(100% - 32px); overflow: auto; }
+footer { min-height: 26px; display: flex; align-items: center; gap: 16px; padding: 0 12px; font-size: 11px; color: var(--muted); background: var(--panel); border-top: 1px solid var(--border); }
+#status { margin-right: auto; }
+
+/* Bienvenida discreta: una indicación útil en lugar de una portada gráfica. */
+#welcome { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; background: var(--bg); text-align: center; }
+h1 { font: 16px var(--font); color: var(--green); margin: 0 0 12px; }
+#welcome p { color: var(--muted); font-size: 12px; line-height: 1.7; }
+#welcome button { border-color: var(--border); }
+
+/* app.js sitúa las sugerencias junto al cursor y limita el menú al espacio visible. */
+/* Sugerencias y avisos: paneles planos con contraste, sin sombras decorativas. */
+#completions { position: absolute; z-index: 5; left: 0; top: 0; width: 280px; max-width: calc(100% - 24px); max-height: 230px; overflow: auto; background: var(--panel); border: 1px solid var(--muted); }
+#completions button { display: flex; width: 100%; justify-content: space-between; gap: 12px; border: 0; text-align: left; }
+#completions button.selected { background: #373225; color: #f1deb1; }
+#completions small { color: var(--muted); }
+#toast { position: fixed; bottom: 34px; right: 12px; background: var(--panel); border: 1px solid #e0bd83; color: var(--text); padding: 12px; max-width: min(480px, calc(100vw - 24px)); overflow-wrap: anywhere; }
+
+/* En pantallas estrechas se conserva el acceso a archivos y a todas las acciones. */
+@media (max-width: 720px) {
+  aside { width: 150px; }
+  header { padding: 0 6px; }
+  kbd, .hint { display: none; }
+  .actions { gap: 0; }
+  .actions button { padding: 4px 6px; }
+  .terminal { height: 140px; }
+  footer { gap: 8px; }
+}
+@media (max-width: 900px) { .search-panel { flex-wrap: wrap; } }
+@media (max-width: 480px) {
+  main { flex-direction: column; overflow: auto; }
+  aside { width: 100%; min-height: 120px; height: 140px; flex-shrink: 0; border-right: 0; border-bottom: 1px solid var(--border); }
+  #project { padding: 5px 12px; }
+  .aside-foot { display: none; }
+  .workspace { min-height: 420px; }
+  .brand strong { display: none; }
+  #execution { margin-left: 0; }
+}
+
+/* Acabado sobrio: jerarquía suave, espaciado consistente y acciones secundarias discretas. */
+button { border-radius: 3px; }
+.brand { letter-spacing: .04em; }
+.brand img { width: 22px; height: 22px; }
+.brand strong { font-size: 11px; }
+#tabs { gap: 10px; }
+#filename { color: var(--text); }
+#breadcrumb { opacity: .85; }
+#tree button.active { background: #25231c; }
+.aside-foot { display: flex; justify-content: space-between; letter-spacing: .08em; }
+.aside-foot span { font-size: 9px; }
+.delete-action { font-size: 11px; color: var(--muted); padding: 3px 7px; }
+.delete-action:hover:not(:disabled) { color: #f0a29a; background: #302024; }
+#completions { border-color: #514935; border-radius: 4px; box-shadow: 0 8px 24px #0005; }
+#highlight .string { color: #b0c990; }
+#welcome h1 { letter-spacing: .12em; font-size: 18px; }
+#welcome button { margin-top: 10px; }
+@media (max-width: 480px) { .aside-foot { display: none; } }
+
+/* Identificadores de variables, parámetros y campos; las funciones conservan su color. */
+#highlight .variable { color: #edee63; }
+
+/* Entrada interactiva integrada en la terminal: texto enviado al programa, no a un shell. */
+.terminal-input{display:flex;align-items:center;gap:8px;padding:8px 12px;border-top:1px solid var(--border)}
+.terminal-input label{color:#edee63}.terminal-input input{flex:1;min-width:0;border:0;background:transparent;color:inherit;font:inherit;outline-offset:3px}
+.terminal-input input:disabled{opacity:.6}.terminal-input button{white-space:nowrap;font-size:11px}
+@media(max-width:600px){.terminal-input{flex-wrap:wrap}.terminal-input input{flex-basis:75%}}
+
+/* Margen de plegado: misma altura que el texto y números del documento original. */
+#lines { width: 76px; padding-right: 0; white-space: normal; }
+.fold-line { height: 24px; display: flex; align-items: center; justify-content: flex-end; padding-right: 4px; }
+.fold-line span { flex: 1; text-align: right; }
+.fold-line::after { content: ''; width: 24px; }
+.fold-line:has(button)::after { display: none; }
+.fold-line button { width: 24px; height: 24px; padding: 0; line-height: 24px; color: var(--green); }
+#unfold { font-size: 11px; white-space: nowrap; }
+
+/* Explorador conmutable y terminal redimensionable desde su borde superior. */
+body.explorer-hidden #explorer { display: none; }
+#terminal-panel { display: flex; flex-direction: column; resize: none; max-height: none; min-height: 110px; overflow: hidden; }
+#terminal-panel .section, #terminal-panel .terminal-input { flex-shrink: 0; }
+#terminal-panel #output { flex: 1; min-height: 0; max-height: none; overflow: auto; }
+#terminal-resizer { height: 6px; flex-shrink: 0; cursor: ns-resize; touch-action: none; background: var(--border); }
+#terminal-resizer:hover, #terminal-resizer:focus-visible { background: var(--green); outline: none; }
+
+/* Enlace discreto de apoyo; conserva la paleta del editor. */
+.donate { color: var(--accent, #edee63); margin-left: auto; text-decoration: none; }
+.donate:hover { text-decoration: underline; }
+
+/* Panel informativo: no concede permisos de forma automática. */
+dialog { max-width: 640px; background: #171717; color: #eee; border: 1px solid #555; padding: 24px; }
+dialog::backdrop { background: #0009; }
+dialog pre { white-space: pre-wrap; }
+
+/* Página de apoyo independiente, con la misma paleta y sin cargar el editor. */
+body.support-page { height: auto; min-height: 100vh; overflow: auto; display: grid; place-items: center; padding: 32px 20px; }
+main.support-card { display: block; flex: none; max-width: 560px; height: auto; text-align: center; line-height: 1.8; }
+.support-card h1 { font-size: clamp(26px, 5vw, 38px); line-height: 1.2; font-weight: 500; }
+.support-card p { color: var(--muted); }
+.support-label { letter-spacing: .18em; font-size: 12px; }
+.support-donate { display: inline-block; margin: 18px 0; padding: 12px 26px; border-radius: 6px; background: #edee63; color: #11130f; text-decoration: none; font-weight: 600; }
+.support-donate:focus-visible { outline: 2px solid white; outline-offset: 4px; }
+.support-note { font-size: 12px; }
+
+/* Opciones y formulario del menú: accesibles también en ventanas pequeñas. */
+#menu-options { display: grid; gap: 8px; margin: 24px auto; max-width: 360px; }
+#menu-options button { padding: 12px; border: 1px solid var(--border); border-radius: 6px; }
+#project-form { text-align: left; padding: 16px; border: 1px solid var(--border); }
+#project-path { display: block; width: 100%; box-sizing: border-box; padding: 10px; margin-top: 10px; background: var(--panel); color: var(--text); border: 1px solid var(--border); }
+#menu-error { color: #efa3a3; }
+.brand a { display: inline-flex; }
+
+/* Acceso al menú desde la terminal, conservando su entrada para el programa. */
+.terminal-home { color: #edee63; text-decoration: none; margin-left: 16px; text-transform: none; }
+.terminal-home:focus-visible { outline: 2px solid #edee63; outline-offset: 3px; }
+/* Los temas solo cambian presentación: no alteran permisos ni ejecución. */
+:root[data-theme="hacker"] { --bg:#050b07; --panel:#09140c; --text:#c2f5ce; --muted:#78a680; --border:#22492d; --green:#58f78a; }
+:root[data-theme="pro"] { --bg:#0b1020; --panel:#131b30; --text:#e3eaff; --muted:#9aaacb; --border:#2a395b; --green:#73d9ed; }
+.theme-picker { color:var(--text); background:var(--panel); border:1px solid var(--border); padding:5px; }
+#vault-form { margin-top:24px; border:1px solid var(--border); padding:16px; }
+#vault-form label { display:block; margin:12px 0; }
+#vault-form input,#vault-form select,#unlock input { padding:8px; background:var(--panel); color:var(--text); border:1px solid var(--border); }

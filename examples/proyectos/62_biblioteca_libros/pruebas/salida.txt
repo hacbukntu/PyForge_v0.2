@@ -1,0 +1,3 @@
+Prestado: True
+Ya está prestado
+Disponible: True

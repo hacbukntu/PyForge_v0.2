@@ -1,0 +1,26 @@
+/* Manual local: lectura amplia, índice y colores coherentes con el curso y el IDE. */
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #111214; color: #e1e1dc; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #edee63; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, summary:focus-visible { outline: 2px solid #edee63; outline-offset: 4px; }
+header { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; padding: 18px 28px; border-bottom: 1px solid #2b2e33; }
+header a { display: inline-flex; align-items: center; gap: 10px; }
+.reading-layout { max-width: 1360px; margin: auto; display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 48px; padding: 36px 28px; }
+aside { position: sticky; top: 20px; max-height: calc(100vh - 40px); overflow: auto; align-self: start; font-size: 13px; line-height: 1.5; }
+summary { cursor: pointer; color: #e1e1dc; margin-bottom: 14px; }
+nav a { display: block; padding: 5px 0; color: #aeb5b0; }
+nav .level-3, nav .level-4 { padding-left: 14px; font-size: 12px; }
+main { min-width: 0; max-width: 900px; line-height: 1.8; }
+.eyebrow { color: #edee63; font-size: 12px; letter-spacing: .15em; }
+h2, h3, h4 { line-height: 1.3; scroll-margin-top: 24px; }
+h2 { margin-top: 48px; font-size: clamp(24px, 3vw, 32px); border-top: 1px solid #2b2e33; padding-top: 24px; }
+h3 { margin-top: 32px; }
+pre { padding: 20px; background: #181a1d; border: 1px solid #2b2e33; border-radius: 8px; overflow: auto; line-height: 1.65; }
+code { font-family: ui-monospace, monospace; font-size: .9em; }
+p code, td code { background: #22252a; border-radius: 3px; padding: 2px 5px; }
+.table-scroll { overflow: auto; } table { border-collapse: collapse; width: 100%; } td { border: 1px solid #35383c; padding: 10px 14px; } tr:first-child { background: #1c1f23; font-weight: 600; }
+.tok-keyword { color: #c5a5cd; } .tok-type { color: #8ec5c1; } .tok-function { color: #e0bd83; }
+.tok-variable { color: #edee63; } .tok-string { color: #b0c990; } .tok-comment { color: #969e99; font-style: italic; } .tok-number, .tok-boolean { color: #d7a487; }
+@media (max-width: 800px) { .reading-layout { display: block; padding: 20px; } aside { position: static; max-height: 240px; margin-bottom: 32px; } header { gap: 16px; padding: 16px 20px; } }

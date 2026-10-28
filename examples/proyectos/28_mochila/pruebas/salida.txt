@@ -1,0 +1,5 @@
+Llevar: Portatil
+Llevar: Cargador
+Llevar: Libro
+Dejar: Chaqueta
+Gramos: 3000

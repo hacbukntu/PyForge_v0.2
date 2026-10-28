@@ -1,0 +1,13 @@
+[package]
+name = "comandos"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+ejecutar_procesos = true
+
+[integraciones]
+programas = ["/usr/bin/printf"]

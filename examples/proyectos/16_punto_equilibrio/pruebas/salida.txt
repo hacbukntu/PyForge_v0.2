@@ -1,0 +1,2 @@
+Unidades: 100
+Con coste fijo 100001: 101

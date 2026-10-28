@@ -1,0 +1,17 @@
+[package]
+name = "05_diario_cifrado"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+cifrado = true
+leer_archivos = true
+escribir_archivos = true
+leer_entorno = true
+
+[integraciones]
+# La lista es exacta: otro nombre de variable de entorno se rechaza.
+entorno = ["ST_DIARIO_CLAVE"]

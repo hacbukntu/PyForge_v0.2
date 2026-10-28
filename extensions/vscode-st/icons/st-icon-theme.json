@@ -1,0 +1,13 @@
+{
+  "iconDefinitions": {
+    "_st_file": {
+      "iconPath": "./st-file-icon.svg"
+    }
+  },
+  "fileExtensions": {
+    "st": "_st_file"
+  },
+  "fileNames": {
+    "main.st": "_st_file"
+  }
+}

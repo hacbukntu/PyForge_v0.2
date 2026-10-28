@@ -1,0 +1,945 @@
+[
+  {
+    "title": "Adivina el número",
+    "category": "Juegos",
+    "description": "Practica búsqueda por pistas con un máximo de cinco intentos.",
+    "artifacts": {},
+    "folder": "01_adivina_numero",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Piedra, papel y tijera",
+    "category": "Juegos",
+    "description": "Juega tres rondas contra una secuencia de movimientos reproducible.",
+    "artifacts": {},
+    "folder": "02_piedra_papel_tijera",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Tres en raya para dos jugadores",
+    "category": "Juegos",
+    "description": "Alterna jugadores, valida casillas y detecta filas, columnas y diagonales.",
+    "artifacts": {},
+    "folder": "03_tres_en_raya",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Ahorcado",
+    "category": "Juegos",
+    "description": "Descubre una palabra conservando letras acertadas y controlando seis fallos.",
+    "artifacts": {},
+    "folder": "04_ahorcado",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Carrera de dados",
+    "category": "Juegos",
+    "description": "Simula una carrera con semilla elegida por el usuario y resultados reproducibles.",
+    "artifacts": {},
+    "folder": "05_carrera_dados",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Nim: retirar fichas",
+    "category": "Juegos",
+    "description": "Juega contra una estrategia que deja múltiplos de cuatro.",
+    "artifacts": {},
+    "folder": "06_nim",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Aventura de decisiones",
+    "category": "Juegos",
+    "description": "Explora dos rutas y combina una llave con una decisión final.",
+    "artifacts": {},
+    "folder": "07_aventura",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Trivia con puntuación",
+    "category": "Juegos",
+    "description": "Corrige respuestas, calcula puntos y presenta el porcentaje de aciertos.",
+    "artifacts": {},
+    "folder": "08_trivia",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Laberinto de cuadrícula",
+    "category": "Juegos",
+    "description": "Navega con WASD, respeta paredes y llega a una salida.",
+    "artifacts": {},
+    "folder": "09_laberinto",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Combate por turnos",
+    "category": "Juegos",
+    "description": "Administra salud, pociones y ataques en una batalla de consola.",
+    "artifacts": {},
+    "folder": "10_combate_turnos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Factura en centavos",
+    "category": "Negocio",
+    "description": "Calcula subtotal, impuesto configurable y total evitando redondeo binario.",
+    "artifacts": {},
+    "folder": "11_factura",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Descuentos por volumen",
+    "category": "Negocio",
+    "description": "Aplica descuentos escalonados y obtiene el importe final en centavos.",
+    "artifacts": {},
+    "folder": "12_descuentos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Repartir una cuenta",
+    "category": "Negocio",
+    "description": "Distribuye centavos y asigna el resto sin perder dinero en el reparto.",
+    "artifacts": {},
+    "folder": "13_dividir_cuenta",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Control de presupuesto",
+    "category": "Negocio",
+    "description": "Clasifica gastos y avisa si una categoría supera su presupuesto.",
+    "artifacts": {},
+    "folder": "14_presupuesto",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Meta de ahorro",
+    "category": "Negocio",
+    "description": "Estima cuántos meses hacen falta con aportaciones constantes, sin intereses.",
+    "artifacts": {},
+    "folder": "15_meta_ahorro",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Punto de equilibrio",
+    "category": "Negocio",
+    "description": "Calcula unidades necesarias para cubrir costes fijos con un margen positivo.",
+    "artifacts": {},
+    "folder": "16_punto_equilibrio",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Plan de cuotas sin intereses",
+    "category": "Negocio",
+    "description": "Genera un calendario de cuotas iguales y ajusta la última por el resto.",
+    "artifacts": {},
+    "folder": "17_cuotas",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Cierre de caja",
+    "category": "Negocio",
+    "description": "Reconcilia apertura, ventas, devoluciones y efectivo contado.",
+    "artifacts": {},
+    "folder": "18_caja_diaria",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Valor de inventario",
+    "category": "Negocio",
+    "description": "Calcula el coste total del almacén y detecta existencias bajas.",
+    "artifacts": {},
+    "folder": "19_valor_inventario",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Cotizador de servicios",
+    "category": "Negocio",
+    "description": "Combina horas, tarifa, materiales y recargo por urgencia.",
+    "artifacts": {},
+    "folder": "20_cotizador_servicios",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Lista de tareas",
+    "category": "Organización",
+    "description": "Gestiona tareas pendientes y marca una como terminada mediante su índice.",
+    "artifacts": {},
+    "folder": "21_lista_tareas",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Agenda de contactos",
+    "category": "Organización",
+    "description": "Busca teléfonos por nombre sin consultar claves inexistentes.",
+    "artifacts": {},
+    "folder": "22_agenda",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Plan de estudio",
+    "category": "Organización",
+    "description": "Distribuye temas en días según un presupuesto de minutos.",
+    "artifacts": {},
+    "folder": "23_plan_estudio",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Planificador de bloques de concentración",
+    "category": "Organización",
+    "description": "Genera una secuencia de trabajo y descansos sin bloquear minutos durante la demostración.",
+    "artifacts": {},
+    "folder": "24_pomodoro",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Registro semanal de hábitos",
+    "category": "Organización",
+    "description": "Cuenta días cumplidos y la mejor racha consecutiva.",
+    "artifacts": {},
+    "folder": "25_habitos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Detector de reuniones superpuestas",
+    "category": "Organización",
+    "description": "Compara intervalos de minutos y detecta conflictos de agenda.",
+    "artifacts": {},
+    "folder": "26_reuniones",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Rotación de turnos",
+    "category": "Organización",
+    "description": "Asigna personal por rotación circular para evitar una asignación fija.",
+    "artifacts": {},
+    "folder": "27_turnos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Lista de equipaje por peso",
+    "category": "Organización",
+    "description": "Selecciona elementos prioritarios que caben en un límite de peso.",
+    "artifacts": {},
+    "folder": "28_mochila",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Lista de compras consolidada",
+    "category": "Organización",
+    "description": "Acumula productos repetidos conservando el orden de primera aparición.",
+    "artifacts": {},
+    "folder": "29_lista_compras",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Cola de prioridades de tareas",
+    "category": "Organización",
+    "description": "Ordena tareas por urgencia usando listas paralelas e intercambio estable.",
+    "artifacts": {},
+    "folder": "30_prioridades",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Contador de texto",
+    "category": "Texto y datos",
+    "description": "Cuenta caracteres Unicode, palabras y líneas de un texto de entrada.",
+    "artifacts": {},
+    "folder": "31_contador_texto",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Verificador de palíndromos",
+    "category": "Texto y datos",
+    "description": "Compara caracteres extremos ignorando espacios y signos elegidos.",
+    "artifacts": {},
+    "folder": "32_palindromo",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Generador de identificadores URL",
+    "category": "Texto y datos",
+    "description": "Transforma títulos ASCII a minúsculas con guiones y elimina símbolos.",
+    "artifacts": {},
+    "folder": "33_slug",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Ocultar datos en un texto",
+    "category": "Texto y datos",
+    "description": "Sustituye un identificador conocido y una dirección de ejemplo antes de compartir un mensaje.",
+    "artifacts": {},
+    "folder": "34_censurar_datos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Buscar coincidencias solapadas",
+    "category": "Texto y datos",
+    "description": "Encuentra todas las posiciones donde aparece un patrón corto.",
+    "artifacts": {},
+    "folder": "35_buscar_ocurrencias",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Frecuencia de caracteres",
+    "category": "Texto y datos",
+    "description": "Agrupa caracteres Unicode y mantiene su orden de aparición.",
+    "artifacts": {},
+    "folder": "36_frecuencia_letras",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Lector de CSV sencillo",
+    "category": "Texto y datos",
+    "description": "Separa una fila en campos conservando los vacíos.",
+    "artifacts": {},
+    "folder": "37_csv_simple",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Compresor RLE de texto",
+    "category": "Texto y datos",
+    "description": "Codifica secuencias de caracteres iguales como símbolo y cantidad.",
+    "artifacts": {},
+    "folder": "38_rle",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Estadísticas descriptivas",
+    "category": "Texto y datos",
+    "description": "Calcula media, mínimo, máximo y amplitud de una serie.",
+    "artifacts": {},
+    "folder": "39_estadisticas",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Media móvil de ventas",
+    "category": "Texto y datos",
+    "description": "Suaviza una serie usando una ventana deslizante de tres muestras.",
+    "artifacts": {},
+    "folder": "40_media_movil",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Bloc de notas persistente",
+    "category": "Archivos y JSON",
+    "description": "Lee una nota desde la terminal, la guarda y verifica su contenido.",
+    "artifacts": {
+      "nota.txt": "Comprar pan\n"
+    },
+    "folder": "41_bloc_notas",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Copia verificada de texto",
+    "category": "Archivos y JSON",
+    "description": "Copia un archivo UTF-8 y compara origen y destino.",
+    "artifacts": {
+      "copia.txt": "Hola ST!\n"
+    },
+    "folder": "42_copia_texto",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "original.txt"
+    ]
+  },
+  {
+    "title": "Diario con conservación de entradas",
+    "category": "Archivos y JSON",
+    "description": "Añade una entrada conservando el contenido previo mediante lectura y reescritura.",
+    "artifacts": {
+      "diario.txt": "- Aprender variables\n- Probar ST\n"
+    },
+    "folder": "43_diario",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "diario.txt"
+    ]
+  },
+  {
+    "title": "Configuración JSON tipada",
+    "category": "Archivos y JSON",
+    "description": "Carga opciones de aplicación y convierte explícitamente sus valores.",
+    "artifacts": {},
+    "folder": "44_configuracion_json",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "config.json"
+    ]
+  },
+  {
+    "title": "Exportar formulario a JSON",
+    "category": "Archivos y JSON",
+    "description": "Valida edad y serializa nombre, edad y consentimiento.",
+    "artifacts": {
+      "formulario.json": "{\"nombre\":\"Ana\",\"edad\":20,\"activo\":true}"
+    },
+    "folder": "45_formulario_json",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Consultar catálogo JSON",
+    "category": "Archivos y JSON",
+    "description": "Recorre registros anidados y filtra productos disponibles.",
+    "artifacts": {},
+    "folder": "46_catalogo_json",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "catalogo.json"
+    ]
+  },
+  {
+    "title": "Validador de documentos JSON",
+    "category": "Archivos y JSON",
+    "description": "Informa del primer problema de sintaxis mediante excepciones capturables.",
+    "artifacts": {},
+    "folder": "47_validar_json",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "documento.json"
+    ]
+  },
+  {
+    "title": "Combinar configuraciones conocidas",
+    "category": "Archivos y JSON",
+    "description": "Combina un nombre base y un límite local, validando las claves esperadas.",
+    "artifacts": {
+      "resultado.json": "{\"nombre\":\"ST\",\"limite\":50}"
+    },
+    "folder": "48_fusion_config",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "base.json",
+      "local.json"
+    ]
+  },
+  {
+    "title": "Limpiar líneas vacías",
+    "category": "Archivos y JSON",
+    "description": "Normaliza CRLF y elimina líneas completamente vacías de un archivo.",
+    "artifacts": {
+      "limpio.txt": "Ana\nLuis\nEva\n"
+    },
+    "folder": "49_limpiar_lineas",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "entrada.txt"
+    ]
+  },
+  {
+    "title": "Resumen de registros de aplicación",
+    "category": "Archivos y JSON",
+    "description": "Cuenta mensajes por nivel a partir de prefijos de líneas.",
+    "artifacts": {},
+    "folder": "50_analizador_logs",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "app.log"
+    ]
+  },
+  {
+    "title": "Ordenación por inserción",
+    "category": "Algoritmos",
+    "description": "Ordena una lista manteniendo los elementos de igual valor en su orden relativo.",
+    "artifacts": {},
+    "folder": "51_ordenar",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Búsqueda binaria",
+    "category": "Algoritmos",
+    "description": "Localiza un elemento en una colección ordenada con intervalo semiabierto.",
+    "artifacts": {},
+    "folder": "52_busqueda_binaria",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Criba de números primos",
+    "category": "Algoritmos",
+    "description": "Marca múltiplos para enumerar primos hasta un límite pequeño.",
+    "artifacts": {},
+    "folder": "53_primos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Máximo común divisor y mínimo común múltiplo",
+    "category": "Algoritmos",
+    "description": "Utiliza el algoritmo de Euclides con comprobación de entradas positivas.",
+    "artifacts": {},
+    "folder": "54_mcd_mcm",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Serie de Fibonacci iterativa",
+    "category": "Algoritmos",
+    "description": "Calcula una serie con memoria constante y limita el índice al rango i64.",
+    "artifacts": {},
+    "folder": "55_fibonacci",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Cambio mínimo con programación dinámica",
+    "category": "Algoritmos",
+    "description": "Obtiene el menor número de monedas para un importe alcanzable.",
+    "artifacts": {},
+    "folder": "56_cambio_monedas",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Ruta mínima en un grafo",
+    "category": "Algoritmos",
+    "description": "Recorre un grafo no ponderado con cola e identifica distancias.",
+    "artifacts": {},
+    "folder": "57_ruta_bfs",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Multiplicación de matrices",
+    "category": "Algoritmos",
+    "description": "Multiplica dos matrices 2x2 usando almacenamiento plano.",
+    "artifacts": {},
+    "folder": "58_matrices",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Operaciones entre conjuntos",
+    "category": "Algoritmos",
+    "description": "Calcula unión e intersección eliminando repetidos con conjuntos nativos.",
+    "artifacts": {},
+    "folder": "59_conjuntos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Orden de dependencias",
+    "category": "Algoritmos",
+    "description": "Planifica tareas de un grafo acíclico y detecta ciclos.",
+    "artifacts": {},
+    "folder": "60_orden_topologico",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Cuenta con saldo controlado",
+    "category": "Modelado con clases",
+    "description": "Modela depósitos y retiros con validación de saldo y errores capturables.",
+    "artifacts": {},
+    "folder": "61_cuenta_saldo",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Préstamos de biblioteca",
+    "category": "Modelado con clases",
+    "description": "Gestiona el préstamo y devolución de un libro con transiciones válidas.",
+    "artifacts": {},
+    "folder": "62_biblioteca_libros",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Carrito de compra",
+    "category": "Modelado con clases",
+    "description": "Encapsula cantidades y calcula un subtotal al agregar productos.",
+    "artifacts": {},
+    "folder": "63_carrito",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Estado de un pedido",
+    "category": "Modelado con clases",
+    "description": "Aplica una máquina de estados para pagar, enviar y entregar pedidos.",
+    "artifacts": {},
+    "folder": "64_pedido_estados",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Reservas con aforo",
+    "category": "Modelado con clases",
+    "description": "Reserva y libera plazas sin superar un aforo fijo.",
+    "artifacts": {},
+    "folder": "65_reservas",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Cronómetro monotónico",
+    "category": "Modelado con clases",
+    "description": "Mide una pausa corta y encapsula el instante inicial en un objeto.",
+    "artifacts": {},
+    "folder": "66_cronometro",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Sensor con umbral",
+    "category": "Modelado con clases",
+    "description": "Valida lecturas y emite un estado según límites configurables.",
+    "artifacts": {},
+    "folder": "67_sensor",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Geometría de rectángulos",
+    "category": "Modelado con clases",
+    "description": "Usa estructura y métodos agregados con implementar para calcular área y perímetro.",
+    "artifacts": {},
+    "folder": "68_rectangulos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Pila de tareas",
+    "category": "Modelado con clases",
+    "description": "Implementa apilar y desapilar con un contador lógico sobre una lista.",
+    "artifacts": {},
+    "folder": "69_pila",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Calculadora modular",
+    "category": "Modelado con clases",
+    "description": "Separa reglas aritméticas del programa de consola mediante importaciones locales.",
+    "artifacts": {},
+    "folder": "70_calculadora_modular",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "src/operaciones.st"
+    ]
+  },
+  {
+    "title": "Portafolio HTML",
+    "category": "Informes y documentos",
+    "description": "Genera una página personal con proyectos escapando el nombre del autor.",
+    "artifacts": {
+      "index.html": "<!doctype html><html lang=\"es\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>ST</title><body><h1>Portafolio de Ana &amp; Luis</h1><ul><li>Inventario</li><li>Agenda</li><li>Juego ST</li></ul></body></html>"
+    },
+    "folder": "71_portafolio_html",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "src/html.st"
+    ]
+  },
+  {
+    "title": "Catálogo HTML",
+    "category": "Informes y documentos",
+    "description": "Crea tarjetas de productos con etiquetas de disponibilidad.",
+    "artifacts": {
+      "index.html": "<!doctype html><html lang=\"es\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>ST</title><body><h1>Catálogo</h1><article><h2>Libro ST</h2><p>Disponible</p></article><article><h2>Cable USB</h2><p>Agotado</p></article></body></html>"
+    },
+    "folder": "72_catalogo_html",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "src/html.st"
+    ]
+  },
+  {
+    "title": "Informe HTML de factura",
+    "category": "Informes y documentos",
+    "description": "Transforma líneas de una factura en una tabla con total calculado.",
+    "artifacts": {
+      "index.html": "<!doctype html><html lang=\"es\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>ST</title><body><h1>Factura de ejemplo</h1><table><tr><th>Producto</th><th>Centavos</th></tr><tr><td>Cuaderno</td><td>600</td></tr><tr><td>Boligrafo</td><td>500</td></tr></table><p>Total: 1100 centavos</p></body></html>"
+    },
+    "folder": "73_factura_html",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "src/html.st"
+    ]
+  },
+  {
+    "title": "Panel HTML de actividad",
+    "category": "Informes y documentos",
+    "description": "Muestra barras proporcionales y datos accesibles como texto.",
+    "artifacts": {
+      "index.html": "<!doctype html><html lang=\"es\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>ST</title><body><h1>Actividad semanal</h1><p>Lunes: 4/10</p><meter min=\"0\" max=\"10\" value=\"4\">4</meter><p>Martes: 8/10</p><meter min=\"0\" max=\"10\" value=\"8\">8</meter><p>Miercoles: 6/10</p><meter min=\"0\" max=\"10\" value=\"6\">6</meter></body></html>"
+    },
+    "folder": "74_panel_barras",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "src/html.st"
+    ]
+  },
+  {
+    "title": "Exportador CSV con comillas",
+    "category": "Informes y documentos",
+    "description": "Escapa comillas y separadores al exportar nombres y cantidades.",
+    "artifacts": {
+      "informe.csv": "producto,cantidad\n\"Cable, USB\",3\n\"Libro \"\"ST\"\"\",2\n"
+    },
+    "folder": "75_exportar_csv",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Informe de avances Markdown",
+    "category": "Informes y documentos",
+    "description": "Produce una tabla de seguimiento con porcentajes calculados.",
+    "artifacts": {
+      "avance.md": "# Avance del proyecto\n\n| Area | Porcentaje |\n| --- | --- |\n| Editor | 80% |\n| Documentacion | 60% |\n| Pruebas | 100% |\n"
+    },
+    "folder": "76_informe_markdown",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Exportar evento de calendario",
+    "category": "Informes y documentos",
+    "description": "Genera un evento iCalendar de ejemplo con horas UTC explícitas.",
+    "artifacts": {
+      "evento.ics": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//ST//Ejemplos//ES\r\nBEGIN:VEVENT\r\nUID:reunion-001@example.test\r\nDTSTAMP:20300101T000000Z\r\nDTSTART:20300115T140000Z\r\nDTEND:20300115T150000Z\r\nSUMMARY:Revision ST\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    "folder": "77_agenda_ics",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Tarjeta de contacto vCard",
+    "category": "Informes y documentos",
+    "description": "Exporta un contacto ficticio como tarjeta de texto estructurado.",
+    "artifacts": {
+      "contacto.vcf": "BEGIN:VCARD\r\nVERSION:3.0\r\nN:Perez;Ana;;;\r\nFN:Ana Perez\r\nTEL:555-0101\r\nEMAIL:ana@example.test\r\nEND:VCARD\r\n"
+    },
+    "folder": "78_contacto_vcard",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": []
+  },
+  {
+    "title": "Canal RSS estático",
+    "category": "Informes y documentos",
+    "description": "Construye un documento XML con títulos escapados y enlaces de ejemplo.",
+    "artifacts": {
+      "noticias.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><rss version=\"2.0\"><channel><title>Noticias ST</title><link>https://example.test/</link><description>Novedades</description><item><title>ST &amp; herramientas</title><link>https://example.test/noticia/0</link></item><item><title>Curso disponible</title><link>https://example.test/noticia/1</link></item></channel></rss>"
+    },
+    "folder": "79_canal_rss",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "src/html.st"
+    ]
+  },
+  {
+    "title": "Cronograma SVG",
+    "category": "Informes y documentos",
+    "description": "Convierte duraciones y posiciones de tareas en un gráfico vectorial autónomo.",
+    "artifacts": {
+      "cronograma.svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"140\" role=\"img\" aria-label=\"Cronograma\"><rect width=\"400\" height=\"140\" fill=\"#111214\"/><text x=\"5\" y=\"20\" fill=\"white\">Diseno</text><rect x=\"100\" y=\"8\" width=\"70\" height=\"18\" fill=\"#e6c566\"/><text x=\"5\" y=\"60\" fill=\"white\">Codigo</text><rect x=\"170\" y=\"48\" width=\"105\" height=\"18\" fill=\"#e6c566\"/><text x=\"5\" y=\"100\" fill=\"white\">Pruebas</text><rect x=\"275\" y=\"88\" width=\"70\" height=\"18\" fill=\"#e6c566\"/></svg>"
+    },
+    "folder": "80_gantt_svg",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/salida.txt",
+    "fixtures": [
+      "src/html.st"
+    ]
+  }
+]

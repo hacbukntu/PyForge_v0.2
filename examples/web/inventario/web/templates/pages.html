@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>{{ title }}</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button>Guardar</button></form><ul>{% for item in records %}<li>{% if item.name %}{{ item.name }} — {{ item.units }} unidades{% else %}{{ item.title }} — {{ item.date }}{% endif %}</li>{% empty %}<li>Aún no hay registros.</li>{% endfor %}</ul>{% endblock %}

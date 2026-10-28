@@ -1,0 +1,4 @@
+Media: 16.0
+Mínimo: 5
+Máximo: 30
+Amplitud: 25

@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Mis notas privadas</h1><p>Ejemplo de datos SQL separados por propietario.</p>{% for note in notes %}<article>{{ note.text }}</article>{% endfor %}<form method="post">{% csrf_token %}{{ form.as_p }}<button>Guardar</button></form>{% endblock %}

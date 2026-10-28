@@ -1,0 +1,16 @@
+[package]
+name = "16_consultas_tcp"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+red = true
+escuchar_red = true
+leer_entorno = true
+
+[integraciones]
+hosts = ["127.0.0.1", "localhost"]
+entorno = ["ST_PORT"]

@@ -1,0 +1,12 @@
+[package]
+name = "06_verificador_integridad"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+cifrado = true
+leer_archivos = true
+escribir_archivos = true

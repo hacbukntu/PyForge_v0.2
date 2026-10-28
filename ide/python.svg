@@ -1,0 +1,6 @@
+<!-- Icono de archivo Python: dos formas entrelazadas en azul y amarillo. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <path d="M32 5H21c-7 0-10 4-10 10v8h22v4H9c-6 0-8 5-8 13s4 12 10 12h6V40c0-7 5-12 12-12h14c5 0 9-4 9-9v-4c0-6-4-10-10-10z" fill="#3776ab"/>
+  <path d="M32 59h11c7 0 10-4 10-10v-8H31v-4h24c6 0 8-5 8-13s-4-12-10-12h-6v12c0 7-5 12-12 12H21c-5 0-9 4-9 9v4c0 6 4 10 10 10z" fill="#ffd343"/>
+  <circle cx="23" cy="13" r="3" fill="#fff"/><circle cx="41" cy="51" r="3" fill="#fff"/>
+</svg>

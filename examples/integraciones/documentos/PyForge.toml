@@ -1,0 +1,12 @@
+[package]
+name = "documentos"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+leer_archivos = true
+escribir_archivos = true
+documentos = true

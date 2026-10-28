@@ -1,0 +1,6 @@
+{% extends 'base.html' %}{% load static %}{% block content %}
+<h1>Culebrita · motor ST</h1><p>Flechas o WASD para girar. Movimiento, comida, crecimiento y colisiones se calculan en ST.</p>
+<form id="snake-controls">{% csrf_token %}<button type="button" id="snake-start">Iniciar / reiniciar</button><button type="button" id="snake-pause">Pausar</button></form>
+<canvas id="snake-board" width="400" height="400" tabindex="0" aria-label="Tablero de culebrita"></canvas>
+<p id="snake-status" role="status">Pulsa iniciar. La partida termina al chocar o alcanzar 100 segmentos.</p>
+<script src="{% static 'snake.js' %}" defer></script>{% endblock %}

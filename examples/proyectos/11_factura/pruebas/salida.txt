@@ -1,0 +1,3 @@
+Subtotal: 4750
+Impuesto: 475
+Total: 5225

@@ -1,0 +1,351 @@
+[
+  {
+    "folder": "01_caja_de_tienda",
+    "title": "Caja de tienda con recibo JSON",
+    "category": "Negocio",
+    "modules": [
+      "db",
+      "json",
+      "io"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "02_informe_comercial",
+    "title": "Informe comercial Word y PDF",
+    "category": "Documentos",
+    "modules": [
+      "documentos",
+      "archivos",
+      "json"
+    ],
+    "mode": "documentos",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [
+      "datos/venta.json"
+    ],
+    "environment": {}
+  },
+  {
+    "folder": "03_inventario_transaccional",
+    "title": "Inventario con movimientos transaccionales",
+    "category": "Negocio",
+    "modules": [
+      "db",
+      "json"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "04_agenda_csv",
+    "title": "Agenda y exportación CSV",
+    "category": "Productividad",
+    "modules": [
+      "archivos",
+      "io",
+      "json"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "05_diario_cifrado",
+    "title": "Diario local con cifrado autenticado",
+    "category": "Seguridad",
+    "modules": [
+      "cifrado",
+      "archivos",
+      "io",
+      "sistema"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {
+      "ST_DIARIO_CLAVE": "GENERAR_EN_PRUEBA"
+    }
+  },
+  {
+    "folder": "06_verificador_integridad",
+    "title": "Verificador de integridad de entregables",
+    "category": "Seguridad",
+    "modules": [
+      "cifrado",
+      "archivos",
+      "json",
+      "os"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [
+      "datos/entrega.txt"
+    ],
+    "environment": {}
+  },
+  {
+    "folder": "07_respaldo_configuracion",
+    "title": "Respaldo versionado de configuración",
+    "category": "Administración",
+    "modules": [
+      "archivos",
+      "json",
+      "time",
+      "os"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [
+      "datos/config.json"
+    ],
+    "environment": {}
+  },
+  {
+    "folder": "08_presupuesto_personal",
+    "title": "Planificador de ahorro mensual",
+    "category": "Finanzas educativas",
+    "modules": [
+      "math",
+      "io"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "09_temporizador_enfoque",
+    "title": "Temporizador de enfoque con registro",
+    "category": "Productividad",
+    "modules": [
+      "time",
+      "io",
+      "archivos",
+      "json"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "10_reto_matematico",
+    "title": "Juego de reto matemático por rondas",
+    "category": "Juego",
+    "modules": [
+      "math",
+      "time",
+      "io",
+      "json"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "11_ahorcado_unicode",
+    "title": "Ahorcado de palabras Unicode",
+    "category": "Juego",
+    "modules": [
+      "io",
+      "json"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "12_batalla_naval",
+    "title": "Batalla naval de bolsillo",
+    "category": "Juego",
+    "modules": [
+      "io",
+      "json"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "13_laberinto_terminal",
+    "title": "Laberinto con paredes y salida",
+    "category": "Juego",
+    "modules": [
+      "io"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "14_duelo_por_turnos",
+    "title": "Duelo de héroes con clases",
+    "category": "Juego",
+    "modules": [
+      "io",
+      "json"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "15_memoria_secuencias",
+    "title": "Juego de memoria de secuencias",
+    "category": "Juego",
+    "modules": [
+      "time",
+      "io"
+    ],
+    "mode": "local",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {}
+  },
+  {
+    "folder": "16_consultas_tcp",
+    "title": "Servicio de consultas por TCP",
+    "category": "Redes",
+    "modules": [
+      "red.tcp",
+      "red.socket",
+      "sistema",
+      "cifrado"
+    ],
+    "mode": "tcp",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {
+      "ST_PORT": "LABORATORIO"
+    }
+  },
+  {
+    "folder": "17_telemetria_udp",
+    "title": "Telemetría UDP con identificador de mensaje",
+    "category": "Redes",
+    "modules": [
+      "red.udp",
+      "json",
+      "cifrado",
+      "sistema"
+    ],
+    "mode": "udp",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {
+      "ST_PORT": "LABORATORIO",
+      "ST_LOCAL_PORT": "LABORATORIO"
+    }
+  },
+  {
+    "folder": "18_cliente_https",
+    "title": "Cliente de estado HTTPS con CA verificada",
+    "category": "Redes",
+    "modules": [
+      "red.ssl",
+      "cifrado",
+      "sistema"
+    ],
+    "mode": "tls",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {
+      "ST_PORT": "LABORATORIO"
+    }
+  },
+  {
+    "folder": "19_transferencias_seguras",
+    "title": "Entrega de archivos mediante SFTP o FTPS",
+    "category": "Redes",
+    "modules": [
+      "red.ssh",
+      "red.sftp",
+      "red.ftp",
+      "sistema",
+      "archivos",
+      "io"
+    ],
+    "mode": "remoto",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [
+      "datos/entrega.txt"
+    ],
+    "environment": {
+      "ST_PORT": "LABORATORIO",
+      "ST_USER": "LABORATORIO",
+      "ST_PASSWORD": "GENERAR_EN_PRUEBA"
+    }
+  },
+  {
+    "folder": "20_panel_operaciones",
+    "title": "Panel gráfico de operaciones locales",
+    "category": "Interfaz gráfica",
+    "modules": [
+      "gui",
+      "integraciones",
+      "vpn",
+      "comandos",
+      "sistema",
+      "json",
+      "time"
+    ],
+    "mode": "gui",
+    "entry": "src/main.st",
+    "stdin": "pruebas/entrada.txt",
+    "stdout": "pruebas/resultado.json",
+    "fixtures": [],
+    "environment": {
+      "ST_GUI_PRUEBA": "1"
+    }
+  }
+]

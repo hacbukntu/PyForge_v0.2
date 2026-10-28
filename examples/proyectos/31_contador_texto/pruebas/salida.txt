@@ -1,0 +1,3 @@
+Escribe una frase:
+Caracteres: 13
+Palabras: 3

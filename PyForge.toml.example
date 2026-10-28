@@ -1,0 +1,7 @@
+[package]
+name = "my_app"
+version = "0.1.0"
+
+[build]
+entry = "src/main.py"
+optimize = true

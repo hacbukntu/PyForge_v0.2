@@ -1,0 +1,4 @@
+Hay 7 fichas. Retira entre 1 y 3; gana quien retire la última.
+Bot retira: 1
+Quedan: 3
+Ganaste

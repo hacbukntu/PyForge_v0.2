@@ -1,0 +1,36 @@
+{
+  "funcion": {
+    "prefix": "funcion",
+    "body": [
+      "funcion ${1:nombre}(${2:parametros}) -> ${3:entero} {",
+      "    ${4:// cuerpo}",
+      "}"
+    ],
+    "description": "Define una función en ST"
+  },
+  "si": {
+    "prefix": "si",
+    "body": [
+      "si ${1:condicion} {",
+      "    ${2:// bloque}",
+      "}"
+    ],
+    "description": "Condicional si"
+  },
+  "para": {
+    "prefix": "para",
+    "body": [
+      "para ${1:valor} en ${2:lista} {",
+      "    ${3:// bloque}",
+      "}"
+    ],
+    "description": "Bucle para"
+  },
+  "mostrar": {
+    "prefix": "mostrar",
+    "body": [
+      "mostrar(${1:valor});"
+    ],
+    "description": "Salida por consola"
+  }
+}

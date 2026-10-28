@@ -1,0 +1,6 @@
+Llega a 2,2 con w/a/s/d. Máximo 12 movimientos.
+Posición: 1,0
+Posición: 2,0
+Posición: 2,1
+Posición: 2,2
+Salida encontrada

@@ -1,0 +1,2 @@
+Saldo insuficiente
+Saldo: 1300

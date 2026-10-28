@@ -1,0 +1,16 @@
+[package]
+name = "18_cliente_https"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+red = true
+leer_archivos = true
+leer_entorno = true
+
+[integraciones]
+hosts = ["127.0.0.1", "localhost"]
+entorno = ["ST_PORT"]

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="st-token" content="__TOKEN__">
+  <title>Bienvenido · ST IDE</title>
+  <link rel="icon" href="/st.svg">
+  <link rel="stylesheet" href="/style.css">
+<script src="/preferences.js" defer></script>
+</head>
+<body class="support-page">
+  <!-- Los títulos se cargan como texto desde menu.json, nunca como HTML. -->
+  <main class="support-card">
+    <img src="/st.svg" width="80" height="80" alt="Logo ST">
+    <h1 id="menu-title">ST / PyForge</h1>
+    <p id="menu-message">Cargando opciones…</p>
+    <p id="menu-project"></p>
+    <label>Tema <select id="theme" class="theme-picker"><option value="normal">Normal</option><option value="hacker">Hacker</option><option value="pro">Pro oscuro</option></select></label><nav id="menu-options" aria-label="Opciones de inicio"></nav>
+    <details><summary>Proyecto cifrado con contraseña</summary><p>Crea una bóveda nueva o abre una existente. Las carpetas normales no se cifran automáticamente. Sin recuperación de contraseña.</p><form id="vault-form"><label>Operación <select id="vault-mode"><option value="crear">Crear proyecto cifrado</option><option value="abrir">Abrir bóveda existente</option></select></label><label>Contraseña <input id="vault-password" type="password" minlength="12" maxlength="256" autocomplete="off" required></label><label id="vault-confirm-label">Repite la contraseña <input id="vault-confirm" type="password" minlength="12" maxlength="256" autocomplete="off"></label><button>Elegir archivo y continuar</button><p id="vault-status" role="alert"></p></form></details><p id="menu-error" role="alert"></p>
+  </main>
+  <script src="/inicio.js"></script>
+</body>
+</html>

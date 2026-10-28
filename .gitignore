@@ -1,0 +1,112 @@
+# Productos reproducibles; se distribuyen mediante paquetes, no mediante Git.
+/target/
+/dist/
+/build/
+/out/
+**/.pyforge-build/
+**/target/
+*.o
+*.exe
+*.deb
+*.asm
+# Python y herramientas locales.
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
+# IDE, pruebas y sistema operativo.
+.vscode/
+.idea/
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+.pyforge-trash/
+.pyforge-ide/
+# Secretos y datos privados. Las plantillas expresamente permitidas son ficticias.
+.env
+.env.*
+!.env.example
+*.secret
+secrets.*
+!secrets.example.toml
+credentials.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+cookies*
+sessions/
+user-data/
+backups/
+.pyforge_patch_backups/
+*.bak
+
+# Configuración de agentes, papelera y perfiles de navegador: nunca publicar.
+/.codex/
+/.agents/
+.st-ide-trash/
+firefox-test-*/
+**/browser-profile*/
+**/playwright-report/
+**/test-results/
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db-journal
+*.stenc
+*.crt
+*.cer
+*.keystore
+*.jks
+known_hosts
+.netrc
+.npmrc
+.pypirc
+.ssh/
+.aws/
+.azure/
+.gnupg/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+# Resultado local de una ejecución; la prueba y las fuentes sí se distribuyen.
+/examples/proyectos_avanzados/06_verificador_integridad/integridad.json
+# Fixture público declarado por el catálogo de proyectos.
+!/examples/proyectos/50_analizador_logs/app.log
+# Productos compilados dentro de proyectos o ejemplos.
+**/dist/
+/examples/games/*/build/
+
+# Proyectos privados y datos del servicio web.
+*.stvault
+.st-vault-*
+**/web/data/
+**/web/static-build/
+/runtime/web_template/data/
+/runtime/web_template/static-build/
+
+# Datos privados del foro real, independientes de los ejemplos.
+website/backend/data/
+website/backend/static-build/
+/examples/games/cristales_3d/juego
+/examples/games/cristales_3d/juego

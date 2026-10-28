@@ -1,0 +1,2 @@
+Reponer: teclado
+Valor en centavos: 15600

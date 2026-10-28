@@ -1,0 +1,4 @@
+Dos enteros:
+Suma: 15
+Producto: 36
+Cociente: 4

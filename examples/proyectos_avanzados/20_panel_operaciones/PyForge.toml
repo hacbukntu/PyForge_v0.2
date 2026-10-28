@@ -1,0 +1,17 @@
+[package]
+name = "20_panel_operaciones"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+gui = true
+consultar_red = true
+ejecutar_procesos = true
+leer_entorno = true
+
+[integraciones]
+programas = ["/usr/bin/printf"]
+entorno = ["ST_GUI_PRUEBA"]

@@ -1,0 +1,5 @@
+Cantidad de bloques (1..8):
+Trabajar 25 minutos
+Descansar 5 minutos
+Trabajar 25 minutos
+Duración total: 55

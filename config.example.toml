@@ -1,0 +1,20 @@
+# Fusiona estas tablas con PyForge.toml de TU proyecto tras revisar los permisos.
+# Todos los accesos avanzados se deniegan por defecto.
+[permisos]
+leer_archivos = false
+escribir_archivos = false
+eliminar_archivos = false
+base_datos = false
+documentos = false
+red = false
+escuchar_red = false
+cifrado = false
+ejecutar_procesos = false
+leer_entorno = false
+consultar_red = false
+gui = false
+
+[integraciones]
+hosts = []
+programas = []
+entorno = []

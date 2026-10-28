@@ -1,0 +1,6 @@
+Día inicial (0..30):
+Día 1: Luis
+Día 2: Eva
+Día 3: Ana
+Día 4: Luis
+Día 5: Eva

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- El servidor sustituye este marcador por el token de sesión de la API. -->
+  <meta name="st-token" content="__TOKEN__">
+  <title>ST IDE</title>
+  <link rel="icon" href="/st.svg">
+  <link rel="stylesheet" href="/style.css">
+<script src="/preferences.js" defer></script>
+</head>
+<body>
+  <!-- Acciones principales: app.js conecta estos botones con guardar/ejecutar/detener. -->
+  <header>
+    <div class="brand"><a href="/inicio.html" title="Menú de inicio"><img src="/st.svg" alt="Logo ST"></a><span>st <strong>/ pyforge</strong></span></div>
+    <div class="actions">
+      <a class="tool-link" href="/manual.md" target="_blank" rel="noopener">Curso</a>
+      <label>Tema <select id="theme" class="theme-picker"><option value="normal">Normal</option><option value="hacker">Hacker</option><option value="pro">Pro oscuro</option></select></label><button id="lock-project" hidden title="Bloquear proyecto cifrado">Bloquear</button><button id="permissions">Permisos</button>
+      <button id="search-open" title="Buscar y reemplazar (Ctrl+F)">Buscar</button>
+      <button id="save" title="Guardar (Ctrl+S)">Guardar <kbd>Ctrl S</kbd></button>
+      <button id="check" title="Comprobar sin ejecutar (Ctrl+Mayús+B)">Comprobar</button>
+      <button id="run" class="primary" title="Guardar y ejecutar (F5)">Ejecutar <kbd>F5</kbd></button>
+      <button id="stop" disabled>Detener</button>
+    </div>
+  </header>
+  <main>
+    <!-- El árbol se genera con nodos de texto para tratar los nombres como datos. -->
+    <aside id="explorer" aria-label="Explorador de archivos (Ctrl+B)">
+      <div class="section">archivos <button id="refresh" title="Actualizar explorador" aria-label="Actualizar explorador">↻</button><button id="new" title="Nuevo archivo ST" aria-label="Nuevo archivo ST">+</button></div>
+      <div id="project"></div>
+      <nav id="tree" aria-label="Archivos del proyecto"></nav>
+      <div class="aside-foot">ST <span>ESPACIO LOCAL</span></div>
+    </aside>
+    <section class="workspace" aria-label="Edición y salida">
+      <!-- Nombre, indicador de cambios y ruta del único archivo activo. -->
+      <div id="tabs"><span id="filename">[sin archivo]</span><span id="dirty"></span><button id="delete" class="delete-action" title="Mover el archivo abierto a la papelera" disabled>Eliminar</button><button id="unfold" title="Mostrar todos los bloques ocultos">Desplegar todo</button><span class="hint">Ctrl+Espacio · sugerencias</span></div>
+      <div id="breadcrumb">Selecciona un archivo para comenzar</div>
+      <section id="search-panel" class="search-panel" aria-label="Buscar y reemplazar" hidden>
+        <input id="search-text" type="search" placeholder="Buscar" aria-label="Texto que buscar">
+        <input id="replace-text" type="text" placeholder="Reemplazar" aria-label="Texto de reemplazo">
+        <label><input id="search-case" type="checkbox"> Aa</label>
+        <button id="search-previous" title="Coincidencia anterior">↑</button>
+        <button id="search-next" title="Coincidencia siguiente">↓</button>
+        <button id="replace-one">Reemplazar</button>
+        <button id="replace-all">Todo</button>
+        <span id="search-status" role="status"></span>
+        <button id="search-close" aria-label="Cerrar búsqueda">×</button>
+      </section>
+      <!-- El texto coloreado y los números son decorativos; el textarea es accesible. -->
+      <div id="editor-wrap">
+        <div id="lines" aria-label="Números de línea y plegado">1</div>
+        <div id="surface">
+          <pre id="highlight" aria-hidden="true"></pre>
+          <textarea id="editor" aria-label="Editor de código" spellcheck="false" autocomplete="off" autocapitalize="off" wrap="off" disabled></textarea>
+        </div>
+        <div id="completions" role="listbox" aria-label="Sugerencias" hidden></div>
+        <div id="welcome">
+          <h1>st / pyforge</h1>
+          <p>Abre un archivo para comenzar.<br>Ctrl+B archivos · Ctrl+S guarda · F5 ejecuta</p>
+          <button id="welcome-new">+ Nuevo archivo en src</button>
+        </div>
+      </div>
+      <!-- La terminal muestra salida y permite responder al programa activo, sin ejecutar un shell. -->
+      <section id="terminal-panel" class="terminal" aria-label="Salida del programa">
+        <div id="terminal-resizer" role="separator" aria-label="Altura de la terminal" aria-orientation="horizontal" aria-valuemin="110" aria-valuemax="600" aria-valuenow="180" tabindex="0" title="Arrastra hacia arriba o abajo; también puedes usar las flechas"></div>
+        <div class="section">salida <a class="terminal-home" href="/inicio.html" title="Volver al menú (Ctrl+Alt+H)">Inicio ↗</a><span id="execution">LISTO</span><button id="clear">Limpiar</button></div>
+        <pre id="output" aria-live="polite">&gt; Listo. Abre un archivo .st o .py y pulsa F5.</pre>
+        <form id="terminal-input" class="terminal-input">
+          <label for="terminal-line">›</label>
+          <input id="terminal-line" aria-label="Respuesta al programa en ejecución" placeholder="Ejecuta un programa para responder aquí…" autocomplete="off" spellcheck="false" disabled>
+          <button id="terminal-send" type="submit" disabled>Enviar</button>
+          <button id="terminal-eof" type="button" title="Cerrar la entrada del programa (Ctrl+D)" disabled>Fin de entrada</button>
+        </form>
+      </section>
+      <!-- render() actualiza el estado, la posición del cursor y el lenguaje. -->
+      <footer><span id="status">Sin archivo abierto</span><span id="position">Lín 1, Col 1</span><span>UTF-8</span><span id="language">ST</span><a class="donate" href="/apoyar.html" target="_blank" rel="noopener noreferrer" title="Apoya el desarrollo del lenguaje ST y su página web">Apoyar ST ↗</a></footer>
+    </section>
+  </main>
+  <!-- Avisos temporales de guardado, conexión y sincronización del vocabulario. -->
+  <div id="toast" role="alert" hidden></div>
+  <dialog id="permissions-dialog" aria-labelledby="permissions-title">
+    <h2 id="permissions-title">Permisos de las integraciones</h2>
+    <p>Declarados en PyForge.toml. Los no declarados se deniegan en el auxiliar.</p>
+    <pre id="permissions-list"></pre>
+    <p>Esto no aísla todo el programa: las funciones nativas anteriores conservan los permisos del sistema operativo.</p>
+    <form method="dialog"><button>Cerrar</button></form>
+  </dialog>
+  <script src="/folding.js"></script>
+  <script src="/autopairs.js"></script>
+  <script src="/search.js"></script>
+  <script src="/web_languages.js" defer></script><script src="/formats.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Índice de tarea completada (0..2):
+[ ] Responder correos
+[x] Preparar entrega
+[ ] Revisar pruebas

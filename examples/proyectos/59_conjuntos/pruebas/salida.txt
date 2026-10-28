@@ -1,0 +1,2 @@
+Unión: 5
+Intersección: 1

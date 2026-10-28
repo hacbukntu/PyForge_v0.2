@@ -1,0 +1,4 @@
+Elige bosque o cueva:
+Encontraste una llave
+Elige puerta o regreso:
+Tesoro encontrado

@@ -1,0 +1,5 @@
+Total en centavos y cantidad de cuotas:
+Cuota 1: 3333
+Cuota 2: 3333
+Cuota 3: 3334
+Comprobación: 10000

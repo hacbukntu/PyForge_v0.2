@@ -1,0 +1,7 @@
+[package]
+name = "pedido_estados"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true

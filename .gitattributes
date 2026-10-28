@@ -1,0 +1,16 @@
+# Finales de línea coherentes, conservando formato de scripts de Windows.
+* text=auto
+*.rs text eol=lf
+*.st text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+.githooks/* text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.png binary
+*.ico binary
+*.pdf binary
+# Archivos internos no necesarios en exportaciones de fuentes.
+.githooks export-ignore

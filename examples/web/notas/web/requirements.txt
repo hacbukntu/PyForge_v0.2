@@ -1,0 +1,4 @@
+Django>=5.2.17,<5.3
+Pillow>=12.1.1
+# Servidor WSGI para despliegue detrás de HTTPS; no usar runserver en producción.
+gunicorn>=23

@@ -1,0 +1,10 @@
+{
+  "contains": [
+    "Diario cifrado y recuperación verificada"
+  ],
+  "artifacts": {
+    "diario.stenc": {
+      "prefix": "ST1."
+    }
+  }
+}

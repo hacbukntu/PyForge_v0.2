@@ -1,0 +1,5 @@
+[package]
+name = "bibliotecas-locales"
+version = "0.1.0"
+[build]
+entry = "src/main.st"

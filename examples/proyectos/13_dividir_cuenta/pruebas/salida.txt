@@ -1,0 +1,4 @@
+Total en centavos y número de personas:
+Persona 1: 334
+Persona 2: 333
+Persona 3: 333

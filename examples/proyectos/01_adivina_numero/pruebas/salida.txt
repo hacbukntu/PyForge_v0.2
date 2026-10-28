@@ -1,0 +1,4 @@
+Adivina del 1 al 100: cinco intentos.
+Mayor
+Menor
+Ganaste

@@ -1,0 +1,2 @@
+Área: 12
+Perímetro: 14

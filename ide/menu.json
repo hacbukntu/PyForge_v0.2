@@ -1,0 +1,11 @@
+{
+  "titulo": "Tu próximo proyecto empieza aquí.",
+  "mensaje": "Programa en español con ST y PyForge. Elige una opción para comenzar.",
+  "opciones": [
+    {"accion": "editor", "texto": "Entrar al editor"},
+    {"accion": "abrir", "texto": "Abrir proyecto"},
+    {"accion": "crear", "texto": "Crear proyecto ST"},
+    {"accion": "manual", "texto": "Consultar el manual"},
+    {"accion": "apoyar", "texto": "Apoyar ST"}
+  ]
+}

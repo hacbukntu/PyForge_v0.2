@@ -1,0 +1,1 @@
+Transcurrieron al menos 4 ms: True

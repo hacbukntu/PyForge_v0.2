@@ -1,0 +1,4 @@
+Efectivo contado en centavos:
+Esperado: 17500
+Diferencia: 0
+Caja conciliada

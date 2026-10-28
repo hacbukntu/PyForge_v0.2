@@ -1,0 +1,9 @@
+[package]
+name = "11_ahorcado_unicode"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]

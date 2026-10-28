@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tipo independiente: no sustituye la asociación de Python ni ejecuta código. -->
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="text/x-st">
+    <comment>ST source code</comment>
+    <comment xml:lang="es">Código fuente ST</comment>
+    <sub-class-of type="text/plain"/>
+    <glob pattern="*.st" weight="60" case-sensitive="true"/>
+    <icon name="text-x-st"/>
+  </mime-type>
+</mime-info>

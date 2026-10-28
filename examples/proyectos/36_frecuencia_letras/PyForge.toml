@@ -1,0 +1,7 @@
+[package]
+name = "frecuencia_letras"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true

@@ -1,0 +1,17 @@
+[package]
+name = "19_transferencias_seguras"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+red = true
+leer_archivos = true
+escribir_archivos = true
+leer_entorno = true
+
+[integraciones]
+hosts = ["127.0.0.1", "localhost"]
+entorno = ["ST_PORT", "ST_USER", "ST_PASSWORD"]

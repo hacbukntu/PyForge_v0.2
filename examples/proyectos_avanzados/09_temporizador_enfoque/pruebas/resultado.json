@@ -1,0 +1,10 @@
+{
+  "contains": [
+    "Sesión completada"
+  ],
+  "artifacts": {
+    "sesion.json": {
+      "prefix": "{\"plan_segundos\":1"
+    }
+  }
+}

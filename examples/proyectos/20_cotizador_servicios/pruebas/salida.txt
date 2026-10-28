@@ -1,0 +1,2 @@
+Normal: 11000
+Urgente: 13750

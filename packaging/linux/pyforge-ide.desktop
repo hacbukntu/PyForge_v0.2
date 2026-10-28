@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=ST IDE
+Comment=Editar programas ST con PyForge
+Exec=pyforge-ide --open-browser --port 0 %f
+TryExec=pyforge-ide
+Icon=pyforge
+Terminal=true
+MimeType=text/x-st;
+Categories=Development;IDE;
+Keywords=ST;PyForge;Programación;

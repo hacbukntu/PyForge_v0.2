@@ -1,0 +1,5 @@
+Tres jugadas: 0 piedra, 1 papel, 2 tijera.
+Victoria
+Empate
+Victoria
+Victorias: 2

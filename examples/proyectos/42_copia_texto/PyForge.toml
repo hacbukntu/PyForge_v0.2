@@ -1,0 +1,8 @@
+[package]
+name = "copia_texto"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+

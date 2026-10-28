@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Respuesta del lenguaje ST</h1><form method="post">{% csrf_token %}<label>Tu nombre <input name="nombre" maxlength="100" required></label><button>Consultar vistas.st</button></form><p>{{ answer }}</p>{% endblock %}

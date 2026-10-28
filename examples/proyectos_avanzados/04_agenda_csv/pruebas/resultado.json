@@ -1,0 +1,10 @@
+{
+  "contains": [
+    "Contacto exportado"
+  ],
+  "artifacts": {
+    "contacto.csv": {
+      "equals": "nombre,correo\n\"Ana\",\"ana@example.invalid\"\n"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Posición: 1
+Posición: 3
+Posición: 5
+Total: 3

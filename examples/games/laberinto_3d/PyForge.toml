@@ -1,0 +1,6 @@
+[package]
+name = "laberinto_3d"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"

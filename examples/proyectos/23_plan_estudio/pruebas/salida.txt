@@ -1,0 +1,5 @@
+Día 1: Variables
+Día 1: Funciones
+Día 2: Colecciones
+Día 3: Modulos
+Día 3: Clases

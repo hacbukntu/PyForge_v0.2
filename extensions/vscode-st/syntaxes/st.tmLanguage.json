@@ -1,0 +1,57 @@
+{
+  "scopeName": "source.st",
+  "patterns": [
+    {
+      "begin": "/\\*",
+      "end": "\\*/",
+      "name": "comment.block.st"
+    },
+    {
+      "begin": "\"\"\"",
+      "end": "\"\"\"",
+      "name": "comment.block.st"
+    },
+    {
+      "match": "(?://|#).*$",
+      "name": "comment.line.st"
+    },
+    {
+      "begin": "\"",
+      "end": "\"",
+      "name": "string.quoted.double.st",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.st"
+        }
+      ]
+    },
+    {
+      "begin": "'",
+      "end": "'",
+      "name": "string.quoted.single.st",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.st"
+        }
+      ]
+    },
+    {
+      "match": "\\b(?:clase|estructura|implementar|nuevo|self|intentar|capturar|finalmente|lanzar|desde|como|coincidir|caso|entrada|abrir|escribir|interpolar|buscar|reemplazar|cadena|flotante|tupla|conjunto|nulo|es|importar|lista|diccionario|agregar|longitud|variable|mostrar|funcion|retornar|si|sino|sino_si|mientras|para|en|rango|romper|continuar|pasar|verdadero|falso|y|o|no|entero|booleano|nada|usar|buffer_nativo|archivo_nativo)\\b",
+      "name": "keyword.control.st"
+    },
+    {
+      "match": "\\b\\d+(?:\\.\\d+)?\\b",
+      "name": "constant.numeric.st"
+    },
+    {
+      "match": "\\b\\w+(?=\\s*\\()",
+      "name": "entity.name.function.st"
+    },
+    {
+      "match": "\\b[A-Za-z_]\\w*\\b",
+      "name": "variable.other.st"
+    }
+  ]
+}

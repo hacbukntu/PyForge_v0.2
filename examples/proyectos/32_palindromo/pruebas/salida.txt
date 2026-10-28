@@ -1,0 +1,2 @@
+Texto en minúsculas:
+Palíndromo: True

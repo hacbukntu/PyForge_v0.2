@@ -1,0 +1,20 @@
+{
+  "contains": [
+    "Informes creados",
+    "Cliente: Libreria Central"
+  ],
+  "artifacts": {
+    "salida/informe.docx": {
+      "exists": true
+    },
+    "salida/informe.pdf": {
+      "exists": true
+    },
+    "salida/informe.rtf": {
+      "prefix": "{\\rtf1"
+    },
+    "salida/informe.txt": {
+      "prefix": "INFORME COMERCIAL"
+    }
+  }
+}

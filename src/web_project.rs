@@ -1,0 +1,139 @@
+//! Proyectos web: ST conserva la lógica nativa; Django gestiona HTTP, sesiones y SQL.
+use std::{fs, path::Path};
+/// Crea una carpeta nueva y copia plantillas incrustadas; no descarga dependencias.
+pub fn new_web_project(name: &str) -> Result<(), String> {
+    crate::project::new_project(name)?;
+    let root = Path::new(name);
+    for (relative, contents) in FILES {
+        let target = root.join(relative);
+        if let Some(parent) = target.parent() {
+            fs::create_dir_all(parent).map_err(|e| e.to_string())?;
+        }
+        fs::write(target, contents).map_err(|e| e.to_string())?;
+    }
+    fs::write(root.join(".gitignore"), "target/\ndist/\n.venv/\nweb/data/\nweb/static-build/\n.env\n.env.*\n!.env.example\n*.sqlite3\n*.stvault\n__pycache__/\n").map_err(|e|e.to_string())?;
+    Ok(())
+}
+// Lista explícita: no se incorporan bases SQL, cachés ni archivos de usuarios.
+const FILES: &[(&str, &str)] = &[
+    (
+        "src/snake.st",
+        include_str!("../runtime/web_template/snake.st"),
+    ),
+    (
+        "web/static/snake.js",
+        include_str!("../runtime/web_template/static/snake.js"),
+    ),
+    (
+        "web/comunidad/migrations/0002_session_key.py",
+        include_str!("../runtime/web_template/comunidad/migrations/0002_session_key.py"),
+    ),
+    (
+        "web/comunidad/tests.py",
+        include_str!("../runtime/web_template/comunidad/tests.py"),
+    ),
+    (
+        "README.md",
+        include_str!("../runtime/web_template/README.md"),
+    ),
+    (
+        "web/comunidad/__init__.py",
+        include_str!("../runtime/web_template/comunidad/__init__.py"),
+    ),
+    (
+        "web/comunidad/admin.py",
+        include_str!("../runtime/web_template/comunidad/admin.py"),
+    ),
+    (
+        "web/comunidad/forms.py",
+        include_str!("../runtime/web_template/comunidad/forms.py"),
+    ),
+    (
+        "web/comunidad/migrations/0001_initial.py",
+        include_str!("../runtime/web_template/comunidad/migrations/0001_initial.py"),
+    ),
+    (
+        "web/comunidad/migrations/__init__.py",
+        include_str!("../runtime/web_template/comunidad/migrations/__init__.py"),
+    ),
+    (
+        "web/comunidad/models.py",
+        include_str!("../runtime/web_template/comunidad/models.py"),
+    ),
+    (
+        "web/comunidad/views.py",
+        include_str!("../runtime/web_template/comunidad/views.py"),
+    ),
+    (
+        "src/main.st",
+        include_str!("../runtime/web_template/main.st"),
+    ),
+    (
+        "src/juego_culebrita.st",
+        include_str!("../runtime/web_template/juego_culebrita.st"),
+    ),
+    (
+        "web/manage.py",
+        include_str!("../runtime/web_template/manage.py"),
+    ),
+    (
+        "web/requirements.txt",
+        include_str!("../runtime/web_template/requirements.txt"),
+    ),
+    (
+        "web/security.py",
+        include_str!("../runtime/web_template/security.py"),
+    ),
+    (
+        "web/settings.py",
+        include_str!("../runtime/web_template/settings.py"),
+    ),
+    (
+        "web/st_worker.py",
+        include_str!("../runtime/web_template/st_worker.py"),
+    ),
+    (
+        "web/static/site.css",
+        include_str!("../runtime/web_template/static/site.css"),
+    ),
+    (
+        "web/static/site.js",
+        include_str!("../runtime/web_template/static/site.js"),
+    ),
+    (
+        "web/templates/base.html",
+        include_str!("../runtime/web_template/templates/base.html"),
+    ),
+    (
+        "web/templates/form.html",
+        include_str!("../runtime/web_template/templates/form.html"),
+    ),
+    (
+        "web/templates/notes.html",
+        include_str!("../runtime/web_template/templates/notes.html"),
+    ),
+    (
+        "web/templates/pages.html",
+        include_str!("../runtime/web_template/templates/pages.html"),
+    ),
+    (
+        "web/templates/snake.html",
+        include_str!("../runtime/web_template/templates/snake.html"),
+    ),
+    (
+        "web/templates/st.html",
+        include_str!("../runtime/web_template/templates/st.html"),
+    ),
+    (
+        "web/urls.py",
+        include_str!("../runtime/web_template/urls.py"),
+    ),
+    (
+        "src/vistas.st",
+        include_str!("../runtime/web_template/vistas.st"),
+    ),
+    (
+        "web/wsgi.py",
+        include_str!("../runtime/web_template/wsgi.py"),
+    ),
+];

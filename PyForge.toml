@@ -1,0 +1,7 @@
+[package]
+name = "pyforge-workspace"
+version = "0.1.0"
+
+[build]
+entry = "examples/ejemplo_color_st.st"
+optimize = true

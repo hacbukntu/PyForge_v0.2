@@ -1,0 +1,11 @@
+{
+  "contains": [
+    "Existencias: 7",
+    "Rechazo esperado:"
+  ],
+  "artifacts": {
+    "inventario-respaldo.db": {
+      "exists": true
+    }
+  }
+}

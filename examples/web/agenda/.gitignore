@@ -1,0 +1,6 @@
+target/
+.venv/
+web/data/
+web/static-build/
+__pycache__/
+.env

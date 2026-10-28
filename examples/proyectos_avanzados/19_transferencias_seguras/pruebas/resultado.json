@@ -1,0 +1,10 @@
+{
+  "contains": [
+    "Entrega SFTP verificada"
+  ],
+  "artifacts": {
+    "descarga.txt": {
+      "equals": "Entrega ficticia ST\n"
+    }
+  }
+}

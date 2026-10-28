@@ -1,0 +1,12 @@
+[package]
+name = "01_caja_de_tienda"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+base_datos = true
+leer_archivos = true
+escribir_archivos = true

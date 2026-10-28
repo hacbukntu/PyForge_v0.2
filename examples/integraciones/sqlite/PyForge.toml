@@ -1,0 +1,14 @@
+[package]
+name = "sqlite"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+leer_archivos = true
+escribir_archivos = true
+base_datos = true
+
+cifrado = true

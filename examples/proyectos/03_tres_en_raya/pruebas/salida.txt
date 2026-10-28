@@ -1,0 +1,18 @@
+lista[entero]
+Dos jugadores: elige casilla 0..8, por filas.
+1 0 0
+0 0 0
+0 0 0
+1 0 0
+2 0 0
+0 0 0
+1 1 0
+2 0 0
+0 0 0
+1 1 0
+2 2 0
+0 0 0
+1 1 1
+2 2 0
+0 0 0
+Ganador: 1

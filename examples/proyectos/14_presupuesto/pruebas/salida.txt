@@ -1,0 +1,5 @@
+comida: 3000
+transporte: -1200
+Revisar transporte
+ocio: 1500
+Saldo global: 3300

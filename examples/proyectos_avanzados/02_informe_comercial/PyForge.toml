@@ -1,0 +1,12 @@
+[package]
+name = "02_informe_comercial"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true
+
+[permisos]
+documentos = true
+leer_archivos = true
+escribir_archivos = true

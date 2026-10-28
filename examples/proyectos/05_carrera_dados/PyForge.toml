@@ -1,0 +1,7 @@
+[package]
+name = "carrera_dados"
+version = "0.1.0"
+
+[build]
+entry = "src/main.st"
+optimize = true

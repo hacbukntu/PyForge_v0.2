@@ -1,0 +1,5 @@
+Semilla entre 0 y 96:
+Dado: 3
+Dado: 5
+Dado: 3
+Distancia: 11

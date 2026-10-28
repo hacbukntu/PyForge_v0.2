@@ -1,0 +1,84 @@
+{
+  "name": "pyforge-st-language",
+  "displayName": "PyForge ST Language",
+  "description": "Colores, autocompletado y ejecución de ST; sin depurador de puntos de interrupción.",
+  "version": "0.1.0",
+  "publisher": "pyforge",
+  "categories": [
+    "Programming Languages"
+  ],
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onLanguage:st"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "st",
+        "aliases": [
+          "ST",
+          "st",
+          "PyForge ST"
+        ],
+        "extensions": [
+          ".st"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/st-file-icon.svg",
+          "dark": "./icons/st-file-icon.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "st",
+        "scopeName": "source.st",
+        "path": "./syntaxes/st.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "st",
+        "path": "./snippets/st.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "pyforge.runFile",
+        "title": "PyForge: ejecutar archivo ST activo"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "pyforge.runFile",
+        "key": "f5",
+        "when": "editorLangId == st && editorTextFocus && isWorkspaceTrusted"
+      }
+    ],
+    "configuration": {
+      "title": "PyForge",
+      "properties": {
+        "pyforge.compilerPath": {
+          "type": "string",
+          "default": "pyforgec",
+          "description": "Ejecutable del compilador, sin argumentos de shell."
+        },
+        "pyforge.sourceRoot": {
+          "type": "string",
+          "default": "",
+          "description": "Raíz opcional del código fuente para leer KEYWORDS y módulos actualizados."
+        }
+      }
+    }
+  },
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "Colores y sugerencias; ejecutar código exige confiar en el proyecto."
+    }
+  }
+}
